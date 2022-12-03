@@ -1,0 +1,22 @@
+1. 예외처리란 무엇인가?
+  예외 처리는 프로그램이 처리되는 동안 특정한 문제가 발생했을 때 처리를 중단하고 다른 처리를 하는 것으로 오류 처리라고도 한다.
+
+2. page디렉티브 태그를 이용한 예외 처리 기법에 사용되는 속성에 대해 설명하시오.
+ <%page errorPage=" ... " %>와 같이 errorPage 속성으로 오류 페이지를 호출하는 방식과 
+ <%page isErrorPage="true" %> 와 같은 isErrorPage 속성으로 오류 페이지를 제작할 수 있다.
+
+ 
+3. web.xml 파일을 이용한 예외 처리 기법에 대해 설명하시오.
+
+두가지 종류가 있으며, 오류 코드에 따라 처리하는 방법과 예외 유형으로 오류 페이지를 호출할 수 있는 방법이 존재한다.
+
+오류코드로 오류 페이지 호출하기
+ <error-page>
+      <error-code> 오류코드 </error-code>
+      <location> 오류 페이지의 URI </location>
+</error-page>
+예외 유형으로 오류 페이지 호출하기
+<error-page>
+     <exception-type>예외 유형</exception-type>
+     <location>오류 페이지의 URI</location>
+</error-page> 

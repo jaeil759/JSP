@@ -1,0 +1,23 @@
+1. form태그에 사용하는 속성에 대해 간단히 설명하시오
+ action : 폼 데이터를 받아 처리하는 웹 페이지의 url을 설정한다
+ method : 폼 데이터가 전송되는 HTTP방식을 설정한다( get or post)
+ name : 폼을 식별하기 위한 이름을 설정한다.
+ accept-charset : 폼 전송에 사용할 문자 인코딩을 설정한다.
+2. form 태그 내에 중첩하여 사용하는 태그를 나열하고 설명하시오
+ input 태그 : 사용자가 텍스트입력, 선택 등을 다양하게 할 수 있도록 공간을 만드는 태그
+ select 태그 : 여러개의 항목이 나타나는 목록 상자에서 항목을 선택하는 태그로, 반드시 option태그를 포함해야 한다
+ textarea태그 : 여러 줄의 텍스트를 입력할 수 잇는 태그로, 입력폼 안에 사용된 태그와 띄어쓰기가 그대로 출력된다
+3. 폼 페이지에서 전송된 데이터를 전달받는 내장 객체와 관련된 메소드는 무엇인가. 
+ request 내장객체
+ 메소드 
+ 1. 요청 파라미터의 값 받기: getParameter("요청 파라미터 이름");
+
+ 2. 요청 파라미터의 값을 배열로 받기: getParameterValues("요청 파라미터 이름");
+
+ 3. 요청 파라미터의 전체 값 받기: 
+
+ 1) getParameterNames() : 모든 입력 약식의 요청 파라미터 이름을 순서에 상관없이 Enumeration형태로 전달받는다
+ 2) hasMoreElements() : Enumeration요소가 있으면 true, 없으면 false를 반환한다
+ 3) nextElement() : enumeration요소를 반환한다
+ 
+ 

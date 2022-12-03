@@ -1,0 +1,20 @@
+01. 세션이란 무엇인가?
+	세션은 클라이언트와 웹서버 간의 상태를 지속적으로 유지하는 방법을 말한다.
+	세션은 웹 서버에서만 접근이 가능하므로 보안 유지에 유리하며 데이터를 저장하는 데 한계가 없습니다.
+	세션은 오직 웹 서버에 존재하는 객체로 웹 브라우저마다 하나씩 존재하므로 웹 서버의 서비스를 제공하는 사용자를 구분하는 단위가 됩니다
+	
+02. jsp 페이지에 세션을 설정하는 메소드, 설정된 세션을 삭제하는 메소드는 무엇인가??
+	세션을 설정하는 메소드는 setAttribute(String name, Object value) 메소드이고, 
+	세션을 삭제하는 메소드는 removeAttribute(String name) 메소드이다.
+	
+	세션에 저장된 모든 세션 속성 이름을 삭제하려면 invalidate()메소드 사용
+	void invalidate()
+	
+03. 설정된 세션 정보를 얻어오는 메소드에 대해 간단히 설명하시오.
+
+	세션 정보 하나에 저장된 속성 값을 얻어오려면 Object getAttribute(String name) 메소드를 사용하고, 
+	여러 개의 세션 속성 이름에 대한 속성 값을 얻어오려면  Enumeration getAttributeNames() 메소드를 사용한다.
+
+ 	유효시간설정 : 
+ 	session내장객체의
+ 	void setMaxInactiveInterval(int interval)
